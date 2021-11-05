@@ -60,6 +60,14 @@ main {
 /* Hero Style */
 .hero {
     background-image: url("../images/magic-bkg.jpg");
+    background-position: center;
+    background-size: auto;
+    min-height: 30vh;
+    display: flex;
+    text-align: right;
+    justify-content: flex-end;
+    padding-left: 10vw;
+    align-items: flex-end;
 }
 
 .hero img {
