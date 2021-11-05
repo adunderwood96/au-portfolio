@@ -97,7 +97,7 @@ nav a {
 }
 
 /* Contact Style */
-body {
+form body {
   font-family: 'Lato', sans-serif;
   background: #bdc2e8;
   color: white;
@@ -111,3 +111,15 @@ form header {
   letter-spacing: 7px;
   flex-wrap: wrap;
 }
+
+.contact {
+    position: relative;
+    width: 500px;
+    margin: 50px auto 100px auto;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .contact h2 {
+  text-align: center;
+  }
