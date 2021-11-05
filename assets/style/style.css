@@ -144,6 +144,28 @@ nav a {
     font-size: 1.4rem;
 }
 /* Portfolio Images */
+
+/* Skills */
+.skills h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid #ac9deb;
+    font-size: vw;
+    line-height: 1.1;
+  }  
+    
+  .li-skills {
+    display: flex;
+    margin: 7px;
+    padding: 5px 10px;
+    color: white;
+    background: #ac9deb;
+    list-style: none;
+    cursor: default;
+    font-size: 1.2em;
+  }
+  /* Skills End */
 /* Portfolio Style End */
 
 
