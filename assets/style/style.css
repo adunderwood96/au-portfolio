@@ -17,6 +17,7 @@ header {
    flex-direction: row;
    justify-content: space-between;
    flex-wrap: wrap;
+   position: sticky;
    align-items: center;
    background-color: #D6B0A7;
 }
@@ -26,17 +27,25 @@ header h1 {
     font-size: 3vw;
 }
 
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
 header a:hover {
     text-shadow: none;
     color: #bdc2e8;
-  }
+}
 
 nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  }
-
-  nav a {
-      
-  }
+}
+    
+nav a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+} 
