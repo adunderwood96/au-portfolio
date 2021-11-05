@@ -196,3 +196,20 @@ textarea:hover {
     color:white;
 }
   /* Contact Style End */
+
+  /* Footer Style */
+.footer {
+    background-color: #bdc2e8;
+    bottom: 0; 
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+}
+    
+.footer a {
+    font-size: 100%;
+    color: white;
+    padding: 40px;
+    text-decoration: none;
+}
+/* Footer Style End */
