@@ -123,3 +123,28 @@ form header {
   .contact h2 {
   text-align: center;
   }
+
+  input {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    width: 470px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+    
+    background: transparent;
+    outline: none;
+    color: black;
+    
+    border: solid 2px white;
+    border-bottom: none;  
+  
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+  }
+  
+  input:hover {
+    background:#ac9deb;
+    color: white;
+  }
