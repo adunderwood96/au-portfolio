@@ -146,25 +146,21 @@ nav a {
 /* Portfolio Images */
 
 /* Skills */
-.skills h2 {
-    flex: 0 0 20%;
-    text-align: right;
-    padding-right: 15px;
-    border-right: 4px solid #ac9deb;
-    font-size: vw;
-    line-height: 1.1;
-  }  
-    
-  .li-skills {
-    display: flex;
-    margin: 7px;
-    padding: 5px 10px;
+.li-skills {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 5px 5px;
     color: white;
     background: #ac9deb;
     list-style: none;
-    cursor: default;
-    font-size: 1.2em;
-  }
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.li-skills:hover {
+text-shadow: none;
+color:white;
+}
   /* Skills End */
 /* Portfolio Style End */
 
@@ -193,11 +189,6 @@ form header {
     flex-wrap: wrap;
 }
   
-.contact h2 {
-    text-align: center;
-    text-shadow: rgba(0, 0, 0, 0.5);
-    color: white;
-}
 
 input {
     font-family: 'Lato', sans-serif;
@@ -212,11 +203,6 @@ input {
     
     border: solid 2px white;
     border-bottom: none;  
-  
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
 }
   
 input:hover {
@@ -267,12 +253,12 @@ textarea:hover {
     border-top: none;
 }
   
-  #submit:hover {
+#submit:hover {
     color:white;
 }
-  /* Contact Style End */
+/* Contact Style End */
 
-  /* Footer Style */
+/* Footer Style */
 .footer {
     background-color: #D6B0A7;
     bottom: 0; 
@@ -296,3 +282,64 @@ textarea:hover {
 }
 /* Footer Style End */
 
+/* MEDIA QUERIES*/
+
+/* Max Width 980px*/
+
+@media screen and (max-width: 980px) {
+header {
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
+    }
+
+header h1 {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 10vw;
+    }
+
+header nav {
+    justify-content: center;
+    }
+
+.content> h2,
+.content> div {
+    flex: 0 0 100%;
+}
+
+.content> h2 {
+    border-right: none;
+    border-bottom: 4px solid var(--primary);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 7vw;
+}
+
+.hero {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-left: 50px;
+}
+}
+
+/* Max Width 768px*/
+@media screen and (max-width: 768px) {
+.grid-item,
+.grid-item:first-child {
+    grid-column: 1 / -1;
+    }
+
+.grid-container {
+    grid-auto-rows: minmax(200px, 1fr);
+    }
+
+.contact address {
+    flex-direction: column;
+    align-items: center;
+    }
+}
