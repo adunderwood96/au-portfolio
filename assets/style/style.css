@@ -1,0 +1,16 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+/* Global Style End */
+
+/* Header/Navigation Style */
+header {
+   padding: 20px;
+   display: flex; 
+   flex-direction: row;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   align-items: center;
+   background-color: #D6B0A7;
+}
