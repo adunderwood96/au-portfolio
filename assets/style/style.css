@@ -10,10 +10,6 @@ font-family: fantasy;
 background-color: #D6B0A7;
 }
 
-h1, h2 {
-    color: white;
-}
-
 main {
     margin-top: 20px;
     margin-bottom: 45px;
@@ -94,13 +90,64 @@ nav a {
 }
 
 /* Content Style */
-.content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap 
+
+.content-page {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Contact Style */
+.content {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.content h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid var(--primary);
+    font-size: vw;
+    line-height: 1.1;
+}
+
+.content div {
+    flex: 0 0 75%;
+}
+
+.content p {
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* Portfolio Style */
+.grid-item:first-child {
+    grid-column: span 8;
+    grid-row: span 2;
+}
+
+.grid-item:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.grid-item div {
+    background-color: var(--secondary);
+    padding: 8px 10px;
+}
+
+.grid-item h3 {
+    font-size: 1.4rem;
+}
+/* Portfolio Images */
+/* Portfolio Style End */
+
+
+/* Contact Me Style */
 form body {
     font-family: 'Lato', sans-serif;
     background: #bdc2e8;
@@ -126,6 +173,8 @@ form header {
   
 .contact h2 {
     text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.5);
+    color: white;
 }
 
 input {
@@ -224,3 +273,4 @@ textarea:hover {
     color: #bdc2e8;
 }
 /* Footer Style End */
+
