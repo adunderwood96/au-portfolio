@@ -98,18 +98,18 @@ nav a {
 
 /* Contact Style */
 form body {
-  font-family: 'Lato', sans-serif;
-  background: #bdc2e8;
-  color: white;
+    font-family: 'Lato', sans-serif;
+    background: #bdc2e8;
+    color: white;
 }
 
 form header {
-  position: relative;
-  margin: 100px 0 25px 0;
-  font-size: 2.3em;
-  text-align: center;
-  letter-spacing: 7px;
-  flex-wrap: wrap;
+    position: relative;
+    margin: 100px 0 25px 0;
+    font-size: 2.3em;
+    text-align: center;
+    letter-spacing: 7px;
+    flex-wrap: wrap;
 }
 
 .contact {
@@ -118,13 +118,13 @@ form header {
     margin: 50px auto 100px auto;
     justify-content: center;
     flex-wrap: wrap;
-  }
+}
   
-  .contact h2 {
-  text-align: center;
-  }
+.contact h2 {
+    text-align: center;
+}
 
-  input {
+input {
     font-family: 'Lato', sans-serif;
     font-size: 1em;
     width: 470px;
@@ -142,9 +142,57 @@ form header {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
-  }
+}
   
-  input:hover {
+input:hover {
     background:#ac9deb;
     color: white;
-  }
+}
+
+textarea {
+    width: 470px;
+    max-width: 470px;
+    height: 110px;
+    max-height: 110px;
+    padding: 15px;
+    
+    background: transparent;
+    outline: none;
+    
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    
+    border: solid 2px white;
+    
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+  
+textarea:hover {
+    background: #ac9deb;
+    color: white;
+}
+  
+#submit {
+    width: 100%px;
+    padding: 0;
+    margin: -5px 0px 0px 0px;
+    
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    color: white;
+    
+    outline:none;
+    cursor: pointer;
+    
+    border: solid 2px white;
+    border-top: none;
+}
+  
+  #submit:hover {
+    color:white;
+}
+  /* Contact Style End */
