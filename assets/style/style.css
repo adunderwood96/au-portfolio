@@ -4,11 +4,11 @@
 }
 
 :root {
-    --primary: rgb(128, 108, 204);
-    --secondary:rgb(207, 217, 223);
-    --tertiary: rgb(241, 233, 241);
-    --dark: rgb(50, 52, 58);
-    --light: rgb(189, 194, 232);
+    --primary: rgb(169, 152, 235);
+    --secondary:rgb(80, 137, 175);
+    --tertiary: rgb(121, 117, 185);
+    --dark: rgb(87, 103, 151);
+    --light: rgb(123, 133, 211);
 }
 
 body {
@@ -16,7 +16,7 @@ body {
     padding: 0;
     font-family: fantasy;
     color: var(--primary);
-    background-color: var(--light);
+    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
     line-height: 1.5;
 }
 
@@ -28,6 +28,8 @@ p {
     margin: 0;
 }
 
+/* Header/Nav Styles */
+
 /* Header Items */
 header {
     display: flex;
@@ -35,12 +37,10 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-color: var(--dark);
-    box-shadow: 0 5px 35px rgb(0, 0, 0, 0.5);
+    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
 }
 
 header h1 {
-    background-color: var(--light);
     color: var(--tertiary);
     padding: 5px 1% 5px 5%;
     margin: 0;
@@ -52,7 +52,7 @@ header a:hover {
     color: var(--light);
 }
 
-/* Navigational Items */
+/* Navigation Style */
 nav {
     display: flex;
     flex-direction: row;
@@ -64,18 +64,21 @@ nav a {
     padding: 5px 10px;
     color: var(--secondary);
     margin-right: 10px;
-    background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
     background-repeat: no-repeat;
-    background-size: 100% 0.2em;
+    background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);    
+    background-blend-mode: screen;
+    background-size: 75% 0.1em;
     background-position: bottom;
-    transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in-out;
     font-size: 1.5rem;
 }
 
 nav a:hover {
-    background-size: 10% 10%;
+    background-size: 100% 100%;
     color: var(--primary);
 }
+
+/* Header/Nav Style End */
 
 main {
     margin-top: 30px;
@@ -84,19 +87,18 @@ main {
 
 /* Hero Content */
 .hero {
-    background: rgb(68, 88, 120);
-    background-image: url("../images/magic-bkg.jpg"), linear-gradient(70deg, var(--secondary) 0%, var(--primary) 100%);
+    background-color: #dad4ec;
     background-size: cover;
     background-position: center;
-    background-blend-mode: soft-light;
+    background-blend-mode: luminosity;
     min-height: 30vh;
     color: var(--light);
-    padding: 2% 6%;
+    padding: 5% 10%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     text-align: right;
-    padding-left: 10vw;
+    padding-left: 5vw;
 }
 
 .hero img {
@@ -111,11 +113,11 @@ main {
 
 .hero h2 {
     color: var(--tertiary);
-    margin: 0;
-    padding: 5px 10px;
+    background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 70%, #faaca8 70%);    
+    padding: 5px 5px;    
     font-size: 2.2rem;
     line-height: 1.2;
-    display: inline;
+    display: inline-flex;
 }
 
 /* Main Page Content */
@@ -140,7 +142,7 @@ main {
     flex: 0 0 20%;
     text-align: right;
     padding-right: 15px;
-    border-right: 4px solid var(--primary);
+    border-right: 4px wavy var(--dark);
     line-height: 1.55vw;
 }
 
@@ -154,14 +156,14 @@ main {
     font-size: 1vw;
 }
 
-/* Grid Portfolio Structure */
-.grid-container {
-    display: grid;
+/*  Portfolio Style */
+.project-grid {
+    grid-template-columns: 100px 50px 100px;
+    grid-template-rows: 80px auto 80px; 
     column-gap: 10px;
-    row-gap: 20px;
-    grid-auto-flow: dense;
-    grid-template-columns: repeat(12, 1fr);
-    grid-auto-rows: minmax(150px, 1fr);
+    row-gap: 15px;
+    gap: 15px 10px;    
+    justify-items: center;
 }
 
 .grid-item {
@@ -179,7 +181,6 @@ main {
     font-size: 1vw;
 }
 
-/* Grid Portfolio - Feature First Child */
 .grid-item:first-child {
     grid-column: span 8;
     grid-row: span 2;
@@ -225,37 +226,38 @@ main {
     font-size: 1.2em;
  }
 
-  /* Skills Style End */
+/* Skills Style End */
 
 /* Contact Style */
 form body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-  }
+}
   
-  form header {
+form header {
     position: relative;
     margin: 100px 0 25px 0;
     font-size: 2.3em;
     text-align: center;
     letter-spacing: 7px;
     flex-wrap: wrap;
-  }
+}
   
-  .contact {
+.contact {
     position: relative;
     width: 500px;
     margin: 50px auto 100px auto;
     justify-content: center;
     flex-wrap: wrap;
-  }
+    flex: auto;
+}
   
-  .contact h2 {
+.contact h2 {
   text-align: center;
   margin-bottom: 20px;
 }
   
-  input {
+input {
     font-family: 'Lato', sans-serif;
     font-size: 1em;
     width: 470px;
@@ -273,14 +275,14 @@ form body {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
-  }
+}
   
-  input:hover {
+input:hover {
     background:#ac9deb;
     color: white;
-  }
+}
   
-  textarea {
+textarea {
     width: 470px;
     max-width: 470px;
     height: 110px;
@@ -302,12 +304,12 @@ form body {
     -ms-transition: all 0.3s ease-in-out;
   }
   
-  textarea:hover {
+textarea:hover {
     background: #ac9deb;
     color: white;
-  }
+}
   
-  #submit {
+#submit {
     width: 100%px;
     padding: 0;
     margin: -5px 0px 0px 0px;
@@ -321,16 +323,15 @@ form body {
     
     border: solid 2px white;
     border-top: none;
-  }
+}
   
-  #submit:hover {
+#submit:hover {
     color:white;
-  }
-  /* Contact Style End */
-  
-  /* Footer Style */
-  .footer {
-    background-color: #bdc2e8;
+}
+/* Contact Style End */
+
+/* Footer Style */
+.footer {
     bottom: 0; 
     width: 100%; 
     display: flex;
@@ -342,7 +343,7 @@ form body {
     color: white;
     padding: 40px;
     text-decoration: none;
-    }
+}
 
 
 /* MEDIA QUERIES*/
@@ -397,7 +398,7 @@ form body {
         grid-column: 1 / -1;
     }
 
-    .grid-container {
+    .project-grid {
         grid-auto-rows: minmax(200px, 1fr);
     }    
 }
