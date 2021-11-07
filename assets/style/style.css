@@ -161,28 +161,63 @@ main {
 }
 
 /*  Portfolio Style */
-.project-grid {
-    grid-template-columns: 100px 50px 100px;
-    grid-template-rows: 80px auto 80px; 
-    column-gap: 10px;
-    row-gap: 15px;
-    gap: 15px 10px;    
-    justify-items: center;
+.container img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    height: 214px;
+}
+.container {
+    max-width: 300px; 
+    margin: 0 auto;  
+    margin-top: 20vh;
+}
+.card {
+    background-color: transparent;  
+    border: 1px solid var(--dark); 
+    padding: 8px;  
+    border-radius: 12px;
+  }
+
+.tag {
+    padding: 4px 8px;
+    border: 1px solid var(--dark);
+    border-radius: 50px;
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--dark);
+}
+  
+  /* Style div elements that have class equal to name */
+.name {
+    font-size: 24px;
+    font-weight: 600;  
+    margin-top: 16px;
+    color: var(--dark);
+}
+  
+  /* Style button element */
+button {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+  
+    font-weight: 600;
+    color: var(--light);
+    background-color: var(--secondary); 
+    margin: 0 auto;
+    display: block;  
+    cursor: pointer;
+}
+  
+.card-details {
+    padding: 16px 8px 8px 8px;
 }
 
-.grid-item {
-    border: 2px solid var(--secondary);
-    grid-column: span 4;
-    background-color: var(--primary);
-    color: var(--tertiary);
-    min-height: 100px;
-    display: flex;
-    align-items: flex-end;
-    padding: 0 0 20px 0;
-    text-decoration: none;
-    background-size: 150%;
-    transition: all 0.5s;
-    font-size: 1vw;
+button:focus,
+button:hover {
+  background-color: var(--primary);
+  color: #e0efff;
 }
 
 .grid-item:first-child {
@@ -201,12 +236,6 @@ main {
 
 .grid-item h3 {
     font-size: 1.4rem;
-}
-
-/* Images*/
-
-.horiseon {
-    background-image: url("../images/horiseon.png");
 }
 
 /* Skills Style */
