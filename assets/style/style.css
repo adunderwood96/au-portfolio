@@ -92,8 +92,8 @@ main {
     background-blend-mode: luminosity;
     min-height: 25vh;
     color: var(--light);
-    padding: 5% 5%;
     display: flex;
+    padding: 1% 1%;
     justify-content: flex-end;
     align-items: flex-end;
     text-align: right;
@@ -122,10 +122,10 @@ main {
 .sideways {
     writing-mode: vertical-rl;
 }
+
 /* Main Page Content */
 
-.content-page {
-    max-width: 80%;
+.page {
     margin-left: auto;
     margin-right: auto;
 }
@@ -134,7 +134,6 @@ main {
     margin: 25px 0;
     padding: 10px 0;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-between;
@@ -157,46 +156,53 @@ main {
 .content p {
     margin-bottom: 20px;
     color: white;
-    font-size: 1vw;
+    font-size: 1.3vw;
 }
 
 /*  Portfolio Style */
+.container {
+    max-width: 300px; 
+    margin: 0 auto;  
+    margin-top: 20vh;
+    display: inline-grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: repeat(3, auto);
+}
+
 .container img {
     width: 100%;
     object-fit: cover;
     border-radius: 12px;
     height: 214px;
 }
-.container {
-    max-width: 300px; 
-    margin: 0 auto;  
-    margin-top: 20vh;
-}
-.card {
-    background-color: transparent;  
+
+.card-details {
+    background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 70%, #faaca8 70%);    
     border: 1px solid var(--dark); 
-    padding: 8px;  
+    padding: 15px;  
     border-radius: 12px;
-  }
+    text-align: center;
+}
 
 .tag {
     padding: 4px 8px;
-    border: 1px solid var(--dark);
+    border: 1px solid var(--light);
     border-radius: 50px;
     font-size: 1em;
     font-weight: 600;
-    color: var(--dark);
+    color: var(--primary);
 }
   
-  /* Style div elements that have class equal to name */
 .name {
     font-size: 24px;
     font-weight: 600;  
     margin-top: 16px;
+    margin-bottom: 16px;
     color: var(--dark);
 }
   
-  /* Style button element */
+  /* button element */
 button {
     border: none;
     padding: 12px 24px;
@@ -209,33 +215,11 @@ button {
     display: block;  
     cursor: pointer;
 }
-  
-.card-details {
-    padding: 16px 8px 8px 8px;
-}
 
 button:focus,
 button:hover {
   background-color: var(--primary);
-  color: #e0efff;
-}
-
-.grid-item:first-child {
-    grid-column: span 8;
-    grid-row: span 2;
-}
-
-.grid-item:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-.grid-item div {
-    background-color: var(--secondary);
-    padding: 8px 10px;
-}
-
-.grid-item h3 {
-    font-size: 1.4rem;
+  color: var(--light);
 }
 
 /* Skills Style */
@@ -288,6 +272,7 @@ form header {
 .contact h2 {
   text-align: center;
   margin-bottom: 20px;
+  color: var(--secondary);
 }
   
 input {
@@ -426,8 +411,8 @@ textarea:hover {
 
 /* Max Width 768px*/
 @media screen and (max-width: 768px) {
-    .grid-item,
-    .grid-item:first-child {
+    .card,
+    .card:first-child {
         grid-column: 1 / -1;
     }
 
