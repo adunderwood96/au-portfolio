@@ -5,19 +5,17 @@
 
 :root {
     --primary: rgb(169, 152, 235);
-    --secondary:rgb(80, 137, 175);
-    --tertiary: rgb(121, 117, 185);
-    --dark: rgb(87, 103, 151);
-    --light: rgb(123, 133, 211);
+    --secondary:rgb(93, 97, 139);
+    --dark: rgb(44, 57, 97);
+    --light: rgb(218, 212, 236);
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: fantasy;
-    color: var(--primary);
-    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
-    line-height: 1.5;
+    background-color: var(--light);
+    line-height: 1.55vw;
 }
 
 h1, h2, h3 {
@@ -37,15 +35,16 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+    padding-top: 40px;
+    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 10%, #f3e7e9 100%);
 }
 
 header h1 {
-    color: var(--tertiary);
+    color: var(--dark);
     padding: 5px 1% 5px 5%;
     margin: 0;
     font-size: 3vw;
-    line-height: 1;
+    line-height: 1.55vw;
 }
 
 header a:hover {
@@ -87,13 +86,13 @@ main {
 
 /* Hero Content */
 .hero {
-    background-color: #dad4ec;
+    background-image: linear-gradient(to bottom, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
     background-size: cover;
     background-position: center;
     background-blend-mode: luminosity;
-    min-height: 30vh;
+    min-height: 25vh;
     color: var(--light);
-    padding: 5% 10%;
+    padding: 5% 5%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -104,7 +103,7 @@ main {
 .hero img {
     width: 150px;
     margin: 20px;
-    border-radius: 30%;
+    border-radius: 20%;
 }
 
 .hero div {
@@ -112,14 +111,17 @@ main {
 }
 
 .hero h2 {
-    color: var(--tertiary);
+    color: var(--secondary);
     background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 70%, #faaca8 70%);    
-    padding: 5px 5px;    
-    font-size: 2.2rem;
+    padding: 5px;    
+    font-size: 2rem;
     line-height: 1.2;
     display: inline-flex;
 }
 
+.sideways {
+    writing-mode: vertical-rl;
+}
 /* Main Page Content */
 
 .content-page {
@@ -141,9 +143,11 @@ main {
 .content h2 {
     flex: 0 0 20%;
     text-align: right;
-    padding-right: 15px;
-    border-right: 4px wavy var(--dark);
+    padding-right: 10px;
+    border-right: 4px solid var(--dark);
+    color: var(--secondary);
     line-height: 1.55vw;
+    background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);  
 }
 
 .content div {
