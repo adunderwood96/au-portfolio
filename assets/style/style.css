@@ -1,14 +1,6 @@
-/* PORTFOLIO CSS STYLES*/
+/* Global Styles*/
 * {
     box-sizing: border-box;
-}
-
-:root {
-    --primary: rgb(169, 152, 235);
-    --secondary:rgb(93, 97, 139);
-    --tertiary: rgb(243, 231, 233);
-    --dark: rgb(189, 129, 166);
-    --light: rgb(218, 212, 236);
 }
 
 body {
@@ -27,8 +19,16 @@ p {
     margin: 0;
 }
 
-/* Header/Nav Styles */
+:root {
+    --primary: rgb(169, 152, 235);
+    --secondary:rgb(93, 97, 139);
+    --tertiary: rgb(243, 231, 233);
+    --dark: rgb(189, 129, 166);
+    --light: rgb(218, 212, 236);
+}
+/* Global Styles End */
 
+/* Header/Nav Styles */
 /* Header Items */
 header {
     display: flex;
@@ -53,7 +53,7 @@ header a:hover {
     color: var(--light);
 }
 
-/* Navigation Style */
+/* Navigation Items */
 nav {
     display: flex;
     flex-direction: row;
@@ -78,15 +78,9 @@ nav a:hover {
     background-size: 100% 100%;
     color: var(--primary);
 }
-
 /* Header/Nav Style End */
 
-main {
-    margin-top: 30px;
-    margin-bottom: 40px;
-}
-
-/* Hero Content */
+/* Hero Styles */
 .hero {
     background-image: linear-gradient(to bottom, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
     background-size: cover;
@@ -124,7 +118,12 @@ main {
     writing-mode: vertical-rl;
 }
 
-/* Main Page Content */
+/* Main Page Styles */
+
+main {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
 
 .page {
     margin-left: auto;
@@ -160,7 +159,7 @@ main {
     font-size: 1.3vw;
 }
 
-/*  Portfolio Style */
+/*  Projects Style */
 .container {
     max-width: 300px; 
     margin: 0 auto;  
@@ -208,7 +207,7 @@ main {
     color: var(--dark);
 }
   
-  /* button element */
+  /* button  element items */
 button {
     border: none;
     padding: 12px 24px;
@@ -227,6 +226,7 @@ button:hover {
   background-color: var(--primary);
   color: var(--light);
 }
+/* Project Style End */
 
 /* Skills Style */
 .skills {
@@ -249,7 +249,6 @@ button:hover {
     list-style: none;
     font-size: 1.2em;
 }
-
 /* Skills Style End */
 
 /* Contact Style */
@@ -355,6 +354,8 @@ textarea:hover {
 }
 /* Contact Style End */
 
+/* Main Page Style End */
+
 /* Footer Style */
 .footer {
     bottom: 0; 
@@ -371,10 +372,9 @@ textarea:hover {
 }
 
 
-/* MEDIA QUERIES*/
+/* Media Queries Style */
 
 /* Max Width 980px*/
-
 @media screen and (max-width: 980px) {
     header {
         padding: 0 0 10px 0;
@@ -393,12 +393,12 @@ textarea:hover {
         justify-content: center;
     }
 
-    .content > h2,
-    .content > div {
+    .content  h2,
+    .content  div {
         flex: 0 0 100%;
     }
 
-    .content > h2 {
+    .content h2 {
         border-right: none;
         border-bottom: 4px solid var(--primary);
         margin-bottom: 20px;
@@ -423,7 +423,8 @@ textarea:hover {
         grid-column: 1 / -1;
     }
 
-    .project-grid {
+    .container {
         grid-auto-rows: minmax(200px, 1fr);
     }    
 }
+/* Media Queries Style End */
