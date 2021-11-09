@@ -53,7 +53,6 @@ header h1 {
   margin: 0;
   font-size: 3vw;
   line-height: 1.55vw;
-  background-color: var(--secondary);
 }
 
 header a:hover {
@@ -192,7 +191,7 @@ main {
   margin: 0 auto;
   margin-left: 100px;
   display: inline-grid;
-  column-gap: 25px;
+  column-gap: 40px;
   row-gap: 25px;
   grid-template-columns: repeat(3, auto);
 }
@@ -210,6 +209,10 @@ main {
   padding: 15px;
   border-radius: 12px;
   text-align: center;
+}
+.card-details:hover {
+    background-color: var(--dark);
+    background-blend-mode: soft-light;
 }
 
 .card-details:first-child {
@@ -402,55 +405,83 @@ textarea:hover {
 
 /* Max Width 980px*/
 @media screen and (max-width: 980px) {
-  header {
-    padding: 0 0 10px 0;
+header {
+    padding: 45px;
     justify-content: center;
     text-align: center;
-  }
+}
 
-  header h1 {
+header h1 {
     width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
     font-size: 10vw;
-  }
+}
 
-  header nav {
+header nav {
     justify-content: center;
-  }
+    padding: 40px;
+}
+header nav a {
+    font-size: 5vw;
+}
 
-  .content h2,
-  .content div {
-    flex: 0 0 100%;
-  }
-
-  .content h2 {
-    border-right: none;
-    border-bottom: 4px solid var(--primary);
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    text-align: left;
-    font-size: 7vw;
-  }
-
-  .hero {
+.hero {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     padding-left: 50px;
-  }
 }
 
+.hero h2 {
+    margin: 15px;
+    font-size: 7vw;
+}
+
+.sideways{
+    writing-mode: horizontal-tb;
+}
+
+.content h2,
+.content div {
+    flex: 0 0 100%;
+    padding: 30px;
+}
+
+.content h2 {
+    border-right: none;
+    border-bottom: 4px solid var(--primary);
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    text-align: left;
+    font-size: 8vw;
+}
+
+.content p {
+    color: black;
+    line-height: 1.8;
+}
+
+.card-details img {
+    padding: 25px;
+}
+
+.li-skills {
+    font-size: 5vw;
+    padding: 20px;
+}
 /* Max Width 768px*/
 @media screen and (max-width: 768px) {
-  .card,
-  .card:first-child {
-    grid-column: 1 / -1;
-  }
 
-  .container {
-    grid-auto-rows: minmax(200px, 1fr);
-  }
+.container {
+    grid-auto-rows: minmax(400px, 1fr);
+}
+
+.container,
+.container:first-child {
+    grid-column: 1 / -1;
+}
+}
 }
 /* Media Queries Style End */
