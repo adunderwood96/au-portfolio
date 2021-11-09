@@ -190,7 +190,7 @@ main {
 }
 /*  Projects Style */
 .container {
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
   margin-left: 100px;
   display: inline-grid;
@@ -202,8 +202,8 @@ main {
 
 .container img {
   width: 100%;
-  object-fit: cover;
-  border-radius: 12px;
+  object-fit: contain;
+  border-radius: 15px;
   height: 220px;
   padding: 15px;
 }
@@ -467,9 +467,9 @@ textarea:hover {
     line-height: 1.5;
   }
 
-.container {
+  .container {
     width: 600px;
-}
+  }
 
   .card-details img {
     padding: 25px;
