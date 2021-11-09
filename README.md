@@ -7,3 +7,5 @@
 ## Portfolio Location: https://adunderwood96.github.io/au-portfolio/
 
 ### Portfolio Preview:
+
+![AU Portfolio](assets\images\preview.png)
