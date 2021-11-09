@@ -8,4 +8,4 @@
 
 ### Portfolio Preview:
 
-![AU Portfolio](assets\images\preview.png)
+![AU Portfolio](https://github.com/adunderwood96/au-portfolio/blob/c3bab970a9921ada74f0f8c46592a399485a541a/assets/images/preview.png)
