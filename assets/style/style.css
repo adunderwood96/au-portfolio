@@ -31,6 +31,7 @@ p {
 /* Global Styles End */
 
 /* Header/Nav Styles */
+
 /* Header Items */
 header {
   display: flex;
@@ -138,6 +139,7 @@ nav a:hover {
 .sideways {
   writing-mode: vertical-rl;
 }
+/* Hero Styles End */
 
 /* Main Page Styles */
 
@@ -188,6 +190,7 @@ main {
 #about p {
   font-size: 1.5em;
 }
+
 /*  Projects Style */
 .container {
   max-width: 500px;
@@ -215,6 +218,7 @@ main {
   border-radius: 12px;
   text-align: center;
 }
+
 .card-details:hover {
   background-color: var(--light);
   background-blend-mode: soft-light;
