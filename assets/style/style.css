@@ -22,11 +22,11 @@ p {
 }
 
 :root {
-  --primary: rgb(169, 152, 235);
+  --primary: rgb(166, 147, 241);
   --secondary: rgb(93, 97, 139);
-  --tertiary: rgb(243, 231, 233);
+  --tertiary: rgb(233, 215, 218);
   --dark: rgb(189, 129, 166);
-  --light: rgb(218, 212, 236);
+  --light: rgb(191, 177, 235);
 }
 /* Global Styles End */
 
@@ -182,18 +182,22 @@ main {
 .content p {
   margin-bottom: 20px;
   color: white;
-  font-size: 1.3vw;
+  line-height: 1.5;
 }
 
+#about p {
+  font-size: 1.5em;
+}
 /*  Projects Style */
 .container {
-  max-width: 300px;
+  max-width: 600px;
   margin: 0 auto;
   margin-left: 100px;
   display: inline-grid;
   column-gap: 40px;
   row-gap: 25px;
   grid-template-columns: repeat(3, auto);
+  flex-wrap: wrap;
 }
 
 .container img {
@@ -201,6 +205,7 @@ main {
   object-fit: cover;
   border-radius: 12px;
   height: 220px;
+  padding: 15px;
 }
 
 .card-details {
@@ -211,8 +216,8 @@ main {
   text-align: center;
 }
 .card-details:hover {
-    background-color: var(--dark);
-    background-blend-mode: soft-light;
+  background-color: var(--light);
+  background-blend-mode: soft-light;
 }
 
 .card-details:first-child {
@@ -221,7 +226,7 @@ main {
 }
 
 .tag {
-  padding: 4px 8px;
+  padding: 5px 10px;
   border: 1px solid var(--light);
   border-radius: 50px;
   font-size: 1em;
@@ -230,8 +235,8 @@ main {
 }
 
 .name {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 1.5em;
+  font-weight: 300;
   margin-top: 16px;
   margin-bottom: 16px;
   color: var(--dark);
@@ -244,7 +249,7 @@ button {
   border-radius: 50px;
 
   font-weight: 600;
-  color: var(--light);
+  color: black;
   background-color: var(--secondary);
   margin: 0 auto;
   display: block;
@@ -254,7 +259,6 @@ button {
 button:focus,
 button:hover {
   background-color: var(--primary);
-  color: var(--light);
 }
 /* Project Style End */
 
@@ -405,83 +409,89 @@ textarea:hover {
 
 /* Max Width 980px*/
 @media screen and (max-width: 980px) {
-header {
+  header {
     padding: 45px;
     justify-content: center;
     text-align: center;
-}
+  }
 
-header h1 {
+  header h1 {
     width: 100%;
     padding: 15px;
     margin-bottom: 15px;
     font-size: 10vw;
-}
+  }
 
-header nav {
+  header nav {
     justify-content: center;
     padding: 40px;
-}
-header nav a {
+  }
+  header nav a {
     font-size: 5vw;
-}
+  }
 
-.hero {
+  .hero {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     padding-left: 50px;
-}
+  }
 
-.hero h2 {
+  .hero h2 {
     margin: 15px;
     font-size: 7vw;
-}
+  }
 
-.sideways{
+  .sideways {
     writing-mode: horizontal-tb;
-}
+  }
 
-.content h2,
-.content div {
+  .content h2,
+  .content div {
     flex: 0 0 100%;
     padding: 30px;
-}
+  }
 
-.content h2 {
+  .content h2 {
     border-right: none;
     border-bottom: 4px solid var(--primary);
     margin-bottom: 20px;
     padding-bottom: 15px;
     text-align: left;
-    font-size: 8vw;
-}
-
-.content p {
-    color: black;
-    line-height: 1.8;
-}
-
-.card-details img {
-    padding: 25px;
-}
-
-.li-skills {
     font-size: 5vw;
-    padding: 20px;
-}
-/* Max Width 768px*/
-@media screen and (max-width: 768px) {
+  }
+
+  .content p {
+    color: black;
+    line-height: 1.5;
+  }
 
 .container {
-    grid-auto-rows: minmax(400px, 1fr);
+    width: 600px;
 }
 
-.container,
-.container:first-child {
-    grid-column: 1 / -1;
-}
-}
+  .card-details img {
+    padding: 25px;
+  }
+
+  .li-skills {
+    font-size: 5vw;
+    padding: 20px;
+  }
+  /* Max Width 768px*/
+  @media screen and (max-width: 768px) {
+    .container {
+      grid-auto-rows: minmax(600px);
+    }
+
+    .container,
+    .container:first-child {
+      grid-column: 1 / -1;
+    }
+    .card-details img {
+      padding: 20px;
+    }
+  }
 }
 /* Media Queries Style End */
